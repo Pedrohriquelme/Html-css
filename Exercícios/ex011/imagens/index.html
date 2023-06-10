@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumenete ou diminua o tamanho do seu navegador</p>
+
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgm.png" type="image/png">
+<img src="imgg.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo aúdio</h1>
+        <p>Vamos aprender a reproduzir aúdio em HTML5</p>
+        <audio src="SoccerBallInNet.mp3" controls autoplay></audio>
+    <!-- mp3 wav ogg -->
+    <audio preload="metadata" autoplay controls loop>o
+        <source src="SoccerBallInNet.mp3" type="audio/mpeg">
+        <source src="SoccerBallInNet.OGG" type="aúdio/OGG">
+        <source src="SoccerBallInNet.wav" type="aúdio/wav"> 
+        <p>Infelizmente seu navegador não suporta esse tipo de mídia<a href="SoccerBallInNet.mp3"> acesse para baixar por esse link</a> </p>
+    </audio>
+</body>
+</html>
